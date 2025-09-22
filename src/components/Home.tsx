@@ -1,4 +1,4 @@
-import { Calendar, Eye } from "lucide-react";
+import { Calendar, Delete, Edit, Eye, Trash2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -31,10 +31,21 @@ export default function Home() {
               explore how to set up a Reac...
             </p>
           </div>
+          {/* Post footer */}
           <div className="mt-4 flex items-center justify-between">
             <div className="flex cursor-pointer items-center gap-1.5 text-blue-500 transition-colors duration-200 ease-in-out hover:text-blue-600">
               <Eye className="inline size-4" />
-              <span className="">Read More</span>
+              <span>Read More</span>
+            </div>
+            <div className="flex gap-1.5">
+              <button className="flex cursor-pointer items-center gap-1.5 rounded-lg bg-gray-100 px-3 py-2 text-sm font-medium text-gray-700 transition-all duration-200 ease-in-out hover:bg-gray-200 sm:text-base">
+                <Edit className="inline size-4" />
+                <span>Edit</span>
+              </button>
+              <button className="flex cursor-pointer items-center gap-1 rounded-lg px-2 py-2 text-sm font-medium text-white transition-all duration-200 ease-in-out hover:bg-red-200 sm:text-base">
+                <span className="sr-only">Delete</span>
+                <Trash2 className="inline size-4 text-red-500" />
+              </button>
             </div>
           </div>
         </div>
