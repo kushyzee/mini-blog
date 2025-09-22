@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer components {
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-blue-500 to-indigo-500;
+  }
+}
+
+body {
+  @apply bg-gray-100 text-gray-600;
+}
